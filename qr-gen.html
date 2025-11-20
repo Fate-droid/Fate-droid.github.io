@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width - device-width, initial-scale=1.0">
+
+        <time >QR generator</time>
+    </head>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #qr-input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h1>QR Code Generator</h1>
+            <input type="text" id="qr-input" placeholder="Enter text or URL here...">
+            <button onclick="generateQR()">Generate QR code</button>
+            <div id="qr-code-box" style="margin: 20px 125px;">
+            </div>
+        </div>
+
+            <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+            <script src="script-gen.js"></script>
+
+    </body>
+       
+        
+
+
+</html>
